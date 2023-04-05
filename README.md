@@ -1,3 +1,4 @@
-# 3d-representation-learning.github.io
+# dyn-res-pile-manipulation.github.io
 
-https://3d-representation-learning.github.io/nerf-dy/
+dyn-res-pile-manipulation.github.io/dyn-res
+
