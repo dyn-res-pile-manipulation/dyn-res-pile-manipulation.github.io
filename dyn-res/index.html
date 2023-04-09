@@ -59,32 +59,26 @@
 		<!-- <br> -->
 		The main issue is the lack of an ablation study to justify the use of GNNs. We conducted additional experiments to compare GNNs with CNNs. We organize our results as following:
 		<br>
-		1. In Section 1, we demonstrate that GNNs are better at modeling underlying changes in the scene, whereas CNNs tend to hallucinate.
-		<br>
-		2. In Section 2, we show there exists empirical trade-offs between resolution and task performance when using CNNs, which suggests that the dynamic choice of input resolution is not unique to GNNs.
-		<br>
-		3. In Section 3, we compare our model with several fixed-resolution CNN baselines and a CNN baseline augmented with the resolution regressor both quantitatively and qualitatively. Dynamic-resolution CNN outperforms all fixed-resolution counterparts but is still noticeably worse than our dynamic-resolution GNN framework.
-		<br><br>
+		<ul>
+			<li>
+				In Section 1, we demonstrate that GNNs are better at modeling underlying changes in the scene, whereas CNNs tend to hallucinate.
+			</li>
+			<li>
+				In Section 2, we show there exists empirical trade-offs between resolution and task performance when using CNNs, which suggests that the dynamic choice of input resolution is not unique to GNNs.
+			</li>
+			<li>
+				In Section 3, we compare our model with several fixed-resolution CNN baselines and a CNN baseline augmented with the resolution regressor both quantitatively and qualitatively. Dynamic-resolution CNN outperforms all fixed-resolution counterparts but is still noticeably worse than our dynamic-resolution GNN framework.
+			</li>
+		</ul>
 		<h4 style="padding-top: 80px; margin-top: -80px;">1. Hallucination of CNN</h4>
 		<br>
 		<img class="img-responsive img-rounded" src="imgs/dyn_comp_v3.png" style="width:100%; height:100%" alt="">
 		<br><br><br>
-		<!-- <div class="container">
-			<center>
-				<p>Example 1 (substance change: 1.1957448)</p>
-			</center>
-		</div>\ -->
-		<!-- <br><br><br> -->
 
 		<h4 style="padding-top: 80px; margin-top: -80px;">2. Trade-off for CNN resolutions</h4>
 		<br>
 		<img class="img-responsive img-rounded" src="imgs/cnn_tradeoff_v4.png" style="width:100%; height:100%" alt="">
 		<br><br><br>
-		<!-- <div class="container">
-			<center>
-				<p>The same init example</p>
-			</center>
-		</div> -->
 		
 		<h4 style="padding-top: 80px; margin-top: -80px;">3. Dynamic-Resolution CNN</h4>
 		Fixed-resolution CNN does not provide satisfactory performance.
@@ -95,82 +89,6 @@
 		<br><br>
 		<img class="img-responsive img-rounded" src="imgs/mpc_comp_v4_split_2.png" style="width:100%; height:100%" alt="">
 		<br><br>
-		<!-- <div class="container">
-			<center>
-				<p>Caption</p>
-			</center> -->
-		<!-- </div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1-rpR_6b8LVmUfLWQvs9QanxulAo4rm4N/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>CNN 8</p>
-			</center>
-		</div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1v_iFAmrkgjGt0HXr7klh-OvWD-2s_Xrq/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>CNN 16</p>
-			</center>
-		</div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1yttTKPSfeycEFia--I-zo0gzwE0gms8h/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>CNN 32</p>
-			</center>
-		</div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1WQ62ir_XQg9HSD98CeebPeScxtgHdpiI/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>CNN 64</p>
-			</center>
-		</div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1rSVP727xYcV_Uv86YyZaARY_3TTMCKfd/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>CNN 128</p>
-			</center>
-		</div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1no6x0ETUX-u2uhiFm-bHh4K8ZIogMTG4/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>CNN Auto</p>
-			</center>
-		</div>
-		<div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://drive.google.com/file/d/1W4o-0d9r11ywmw7iZqBxveWnljnoNDuw/preview" frameborder="0" allowfullscreen></iframe>
-		</div>
-		<br><br>
-		<div class="container">
-			<center>
-				<p>GNN Auto</p>
-			</center>
-		</div>
-		<br><br><br> -->
-		<!-- <img class="img-responsive img-rounded" src="imgs/success_bar.png" style="width:100%; height:100%" alt="">
-		<br> -->
-		<!-- <div class="container">
-			<center>
-				<p>Success Rate</p>
-			</center>
-		</div> -->
 	</div><br>
 
 
